@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AIMA SAIF</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="education.html" >Education</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container intro-section">
+        <div class="intro-text">
+            <h2>Hello, I'm a Junior Frontend Web Developer with experience of Personalized Projects. </h2>
+            <p>Dedicated software engineering student currently in the 5th semester of a Bachelor’s in Software Engineering at Comsats University Islamabad, Lahore. Proficient in C, Node.js, SQL Server, HTML5, CSS, Bootstrap, and JavaScript.Eager to contribute to collaborative projects, enhance user experiences, and continuously develop my programming and problem-solving abilities.</p>
+            <button class="contact-button">Contact me</button>
+            <div class="social-icons">
+                <a href="https://github.com/Aima-Saif"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/aima_saif589?igsh=czEzYWJtZW5xZW9q"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/aima-saif-401350271/"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="intro-image">
+            <img src="profile.jpg" alt="Aima Saif">
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>Connect with me:</p>
+            <a href="https://www.linkedin.com/in/aima-saif-401350271" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com/aima_saif589?igsh=czEzYWJtZW5xZW9q" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://github.com/Aima-Saif" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
+            </a>
+            <a href="mailto:aimasaif6003@example.com">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail">
+            </a>
+        </div>
+    </footer>
+   
+    <script>
+        const links = document.querySelectorAll('nav ul li a');
+        links.forEach(link => {
+            link.addEventListener('click', function() {
+                links.forEach(lnk => lnk.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
